@@ -1,0 +1,108 @@
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.color_img{
+  -webkit-filter: hue-rotate(157deg);
+  filter: hue-rotate(157deg);
+  -webkit-filter: contrast(7.3);
+  filter: contrast(7.3);
+}
+.cell_100{
+  border:1px inset #8A0829;
+  border-radius: 30px;
+ 
+}
+.gray{
+  background-color: #f6f6f6;
+}
+.navbar{
+  background-color: #8A0829;
+}
+.navbar , .nav > li >a{
+  background-color: #8A0829;
+  color:#00ffff;
+  font-size: 18px;
+}
+
+.navbar-brand{
+  font-family: 'Helvetica,cursive';
+  font-size: 28px;
+  color:#00ffff;
+}
+
+/* Creating various shapes with css*/
+/*Rounded Square*/
+.rounded_square{
+   width:100px;
+   height:100px;
+   border-radius: 30px;
+   background-color: #FA23E9;
+}
+
+.circle{
+  max-width: 100px;
+  height:100px;
+  border-radius: 50%;
+  background-color: #90ff00;
+}
+
+.triangle{
+  margin-top: 80px;
+  width: 0;
+  height:0;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-bottom:80px solid #FACC2E;/* this will face the triangle top*/
+}
+
+.oval{
+  position: relative;
+  margin-top: 40px;
+  width:150px;
+  height:60px;
+  border-radius: 95px 40px;
+  -moz-border-radius: 95px 40px;
+  -webkit-border-radius: 95px 40px;
+  background-color: #0000ff;
+}
+.leaf{
+  margin-top: 30px;
+  width:100px;
+  height:50px;
+  border-radius: 100px 10px;
+  background-color: #AE6B0D;
+
+}
+.hexagon{
+  position: relative;
+  width: 100px; 
+  height: 65.21px;
+  background-color: #ff0000;
+  margin: 86.60px 0;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 30.60px solid #ff0000;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 30.60px solid #ff0000;
+}
+

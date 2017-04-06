@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sample Pages</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="shapes.css">
+ 
+  </head>
+<body>
+
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid" >
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" data-toggle="collapse" data-target="#myNavbar">
+      <img class="color_img" src="g8074.png" height="130%"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav" >
+        <li ><a href="#" >Shapes</a></li>       
+      </ul>
+      <ul class="nav navbar-nav navbar-right" style="display: inline-block;">
+        <li><a href="https://sowmyaporfolio.firebaseapp.com" target="_blank><span class="glyphicon glyphicon-log-in"></span>By Sowmya</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End of Navigation-->
+<!-- page content-->
+<div class="container-fluid">
+<!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header" style="color:#8A0829;">Shapes
+                    <small>- Creating shapes with CSS codes</small>
+                </h1>
+            </div>
+        </div>
+<div class="col-sm-12">
+<div class="col-sm-6">
+<div class="col-sm-12">
+  <div class="col-sm-4"><div class="rounded_square" onclick="showxmp('rounded_square');"></div></div>
+  <div class="col-sm-4"><div class="circle" onclick="showxmp('circle');"></div></div>
+</div>
+<div class="row"><p></p><p></p></div>
+<div class="col-sm-12">
+  <div class="col-sm-4"><div class="triangle" onclick="showxmp('triangle');"></div></div>
+  <div class="col-sm-4"><div class="hexagon" onclick="showxmp('hexagon');"></div></div>
+</div>
+<div class="row"><p></p><p></p></div>
+<div class="col-sm-12">
+  
+  <div class="col-sm-4"><div class="oval" onclick="showxmp('oval');"></div></div>
+  <div class="col-sm-4"><div class="leaf" onclick="showxmp('leaf');"></div></div>
+  
+</div>
+</div>
+<div class="col-sm-6 cell_100" onclick="clearxmp();">
+   <h1><small> Click on the image to see the css to create it.</small></h1>
+  <xmp class="gray" id="myxmp"></xmp>
+</div>
+</div>
+<div class="row"><p></p></div>
+</div>
+<!-- Footer area-->
+
+<footer class="container-fluid">
+  <div class="col-sm-12">
+      
+                  <div class="row">
+                <p>
+                <div class="copyright" >
+                  <center><p style="color:#f7f7f7;">
+                    <br/>&copy; sowmyas <script>document.write(new Date().getFullYear())</script></center>
+                </div>
+              </p>
+            </div>
+            </div>
+ 
+
+</footer>
+<script type="text/javascript">
+  var xmplist=[];
+  xmplist['rounded_square']="      width:100px;\n"+
+   "     height:100px;\n"+
+   "     border-radius: 30px;\n"+
+   "     background-color: #FA23E9;";
+xmplist['circle']="       max-width: 100px;\n     height:100px;\n  border-radius: 50%;\n   background-color: #90ff00;";
+xmplist['triangle']="     width: 0;\n   height:0;\n  border-left: 80px solid transparent;\n  border-right: 80px solid transparent;"+
+  "  border-bottom:80px solid #FACC2E;\n ";
+xmplist['oval']="     width:150px;\n   height:60px;\n   border-radius: 95px 40px;\n  -moz-border-radius: 95px 40px;\n -webkit-border-radius: 95px 40px; \n   background-color: #0000ff;";
+xmplist['leaf'] ="    width:100px;\n  height:50px;\n   border-radius: 100px 10px; \n    background-color: #AE6B0D;";
+xmplist['hexagon']="  .hexagon{\n   position: relative;\n   width: 100px; \n   height: 65.21px;\n   background-color: #ff0000;\n   margin: 86.60px 0; \n }"+
+".hexagon:before,\n .hexagon:after {\n   content: '';\n   position: absolute;\n  width: 0;\n  border-left: 50px solid transparent;\n   border-right: 50px solid transparent; \n}"+
+".hexagon:before {\n   bottom: 100%; \n   border-bottom: 30.60px solid #ff0000; \n }"+
+".hexagon:after {\n   top: 100%;\n   width: 0;\n   border-top: 30.60px solid #ff0000;\n }";
+
+
+function showxmp(item){
+  clearxmp();
+  document.getElementById('myxmp').innerHTML=xmplist[item];
+}
+function clearxmp(){
+  document.getElementById('myxmp').innerHTML="";
+}
+</script>
+</body></html>
