@@ -1,5 +1,5 @@
 # CSS---Shapes
-Simple Shapes created with CSS
+Simple Shapes created with CSS Styling codes.
 
 author: Sowmya R
 
